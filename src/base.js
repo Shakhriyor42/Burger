@@ -1,8 +1,11 @@
 import Rebase from "re-base";
-import firebase from "firebase";
+import firebase from "firebase/app";
+import 'firebase/database';
+import 'firebase/auth';
+
 
 const firebaseApp = firebase.initializeApp({
-    apiKey: "AIzaSyCD2_xAkRPbvjsM7RjzT1IDnZwcXgQ8DRM",
+  apiKey: "AIzaSyCD2_xAkRPbvjsM7RjzT1IDnZwcXgQ8DRM",
   authDomain: "very-hot-burgers-e8b48.firebaseapp.com",
   databaseURL: "https://very-hot-burgers-e8b48-default-rtdb.firebaseio.com"
 });
